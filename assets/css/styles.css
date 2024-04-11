@@ -6,28 +6,22 @@
 body {
   display: flex;
   margin: 0 auto;
-
   background-color: #ffffff;
   color: #000706;
-
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 .container-perfil {
-  display: flex;  
+  display: flex;
   flex-flow: column nowrap;
-
   justify-content: center;
   align-items: center;
   width: 20vw;
-
   font-weight: 800;
   height: 100vh;
-  
   background-color: #002333;
-  
 }
 
 img {
@@ -41,7 +35,6 @@ img {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  
   height: 20vh;
 }
 
@@ -62,7 +55,7 @@ nav p a{
 
 header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   height: 20vh;
   margin-left: 80px;
   justify-content: flex-start;
@@ -93,8 +86,10 @@ header a {
   flex-flow: column wrap;
   justify-content: space-around;
   height: 40vh;
-  width: 972px;
   max-width: 972px;
+  margin: 0 auto;
+  margin-left: 86px;
+
 }
 
 .container-contatos a img {
@@ -105,38 +100,35 @@ header a {
 .container-conhecimentos {
   display: flex;
   flex-flow: column nowrap;
-    
-  justify-content: center;
+  justify-content: flex-start;
   align-items: start;
 }
 
-.box-conhecimentos, .container-objetivos {
+.box-conhecimentos {
   display: flex;
   flex-flow: column nowrap;
-  
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 80vw;
-
-  height: 80vh;
-
+  height: 90vh;
 }
 
 section h2 {
   font-size: 4rem;
+  
 }
 
 .box-titulo-conhecimento {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 796px;
-  height: 150px;
-  margin-bottom: 40px;
+  align-items: center;
+  height: auto; 
+  width: 90vw;
 }
 
 .box-lista-conhecimentos {
-  width: 900px;
+display: flex;
+width: 64vw;
 }
 
 .lista-conhecimentos li a{
@@ -167,6 +159,11 @@ section h2 {
 .container-objetivos {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 90vh;
+
 }
 
 .box-titulo-objetivos {
@@ -174,25 +171,53 @@ section h2 {
   justify-content: center;
   align-items: center;
   width: 80vw;
-  height: 38vh;
+  height: auto;
 }
 
 .box-objetivos {
   display: flex;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   width: 80vw;
+  max-width: 800px;
   line-height: 2rem;
 }
 
 .objetivos-profissionais, .objetivos-pessoais {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  width: 400px;
-  height: 150px;
+  justify-content: center;
+  width: 64vw; 
+  height: auto;
+  padding-top: 40px;
+}
+
+.objetivos-pessoais {
+  padding-top: 20px;
+
 }
 
 h3 {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-main {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-main {
+    width: 95%;
+  }
+
+  .box-titulo-conhecimento {
+    width: 90%;
+  }
+
+  .box-lista-conhecimentos {
+    width: 100%;
+  }
 }
