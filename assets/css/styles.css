@@ -158,7 +158,11 @@ width: 64vw;
 }
 
 .estrela-react {
-  padding-left: 40px;
+  padding-left: 42px;
+}
+
+.estrela-javascript {
+  padding-left: 2px;
 }
 
 .container-objetivos {
