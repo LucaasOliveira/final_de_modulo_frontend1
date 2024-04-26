@@ -26,8 +26,6 @@ nav p a{
   font-weight: 500;
 }
 
-
-
 header {
   display: flex;
   flex-flow: column nowrap;
@@ -158,11 +156,7 @@ width: 64vw;
 }
 
 .estrela-react {
-  padding-left: 42px;
-}
-
-.estrela-javascript {
-  padding-left: 2px;
+  padding-left: 40px;
 }
 
 .container-objetivos {
